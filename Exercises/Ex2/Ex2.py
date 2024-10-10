@@ -22,8 +22,10 @@ def login(url, username, password):
         # Check the status code
         if response.status_code == 200:
             print("Authentication successful!")
+            print(f"Unexpected status code: {response.status_code}")
         elif response.status_code == 401:
             print("Authentication failed. Incorrect credentials.")
+            print(f"Unexpected status code: {response.status_code}")
         else:
             print(f"Unexpected status code: {response.status_code}")
         
