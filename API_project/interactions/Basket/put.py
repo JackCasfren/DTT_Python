@@ -4,16 +4,17 @@ api_key = creds.api_key
 import http.client
 import json
 
+pantry = "pantry1"
+
+
 conn = http.client.HTTPSConnection("getpantry.cloud")
 payload = json.dumps({
-  "derp": "flerp123",
-  "testPayload": True,
-  "keysLength": 3
+  "newKey": "newValue"
 })
 headers = {
-  'Content-Type': 'application/json'
+		'Content-Type': 'application/json'
 }
-conn.request("POST", "/apiv1/pantry/api_key/basket/pantry1", payload, headers)
+conn.request("PUT", f"/apiv1/pantry/{api_key}/basket/YOUR_BASKET_NAME", payload, headers)
 res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))

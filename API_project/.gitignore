@@ -1,4 +1,5 @@
 creds.py
+*creds*
 *.cpy
 *.pyc
 __pycache__/

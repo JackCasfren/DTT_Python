@@ -6,13 +6,14 @@ import json
 
 conn = http.client.HTTPSConnection("getpantry.cloud")
 payload = json.dumps({
-  "name": "basket_name",
-  "description": "bascket_description"
+  "derp": "flerp123",
+  "testPayload": True,
+  "keysLength": 3
 })
 headers = {
   'Content-Type': 'application/json'
 }
-conn.request("PUT", f"https://getpantry.cloud/apiv1/pantry/{api_key}", payload, headers)
+conn.request("POST", f"/apiv1/pantry/{api_key}/basket/pantry1", payload, headers)
 res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))
