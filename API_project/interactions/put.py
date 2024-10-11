@@ -1,18 +1,18 @@
-import creds api_key = creds.api_key
+import creds 
+api_key = creds.api_key
 
-import requests
+import http.client
 import json
 
-url = f"https://getpantry.cloud/apiv1/pantry/{api_key}"
-
+conn = http.client.HTTPSConnection("getpantry.cloud")
 payload = json.dumps({
-  "name": "Postman_Account_Updated",
-  "description": "Postman test account updated"
+  "name": "basket_name",
+  "description": "bascket_description"
 })
 headers = {
   'Content-Type': 'application/json'
 }
-
-response = requests.request("PUT", url, headers=headers, data=payload)
-
-print(response.text)
+conn.request("PUT", f"https://getpantry.cloud/apiv1/pantry/{api_key}", payload, headers)
+res = conn.getresponse()
+data = res.read()
+print(data.decode("utf-8"))

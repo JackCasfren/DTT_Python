@@ -1,0 +1,14 @@
+
+{
+    "name": "Postman_Account_Updated11",
+    "description": "Postman test account updated11",
+    "errors": [],
+    "notifications": true,
+    "percentFull": 1,
+    "baskets": [
+        {
+            "name": "testBasket",
+            "ttl": 2501110
+        }
+    ]
+}
