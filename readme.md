@@ -2,7 +2,8 @@ Greetings, welcome to the DTT repo.
 Here you will be able to find the asked for excersises.
 
 # the project.
-![image](https://github.com/user-attachments/assets/0aa6cf72-6682-48ea-81f5-2c0a32005c74)
+![image](https://github.com/user-attachments/assets/7f67add9-9ada-4cd5-b1b3-8c06ea764298)
+
 
 
 
