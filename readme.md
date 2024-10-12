@@ -1,7 +1,7 @@
 Greetings, welcome to the DTT repo.
 Here you will be able to find the asked for excersises.
 
-# Bust most importantly the project.
+# the project.
 # Pantry Company Values API
 PCVAPI (name is not definitive)
 
