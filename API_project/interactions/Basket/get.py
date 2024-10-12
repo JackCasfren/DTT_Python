@@ -1,8 +1,9 @@
-import creds 
+import sys, os, http.client, json
+sys.path.append(os.path.abspath('API_project'))
+import creds
 api_key = creds.api_key
 
-import http.client
-import json
+
 
 conn = http.client.HTTPSConnection("getpantry.cloud")
 payload = ''
