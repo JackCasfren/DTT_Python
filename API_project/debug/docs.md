@@ -11,3 +11,22 @@ import creds
 
 api_key = creds.api_key
 </blockquote>
+
+
+This is what the json now looks like, previous versions might be diferent.
+But thanks to the non relatable nature of json we can afford to make multiple diferent iterations.
+<blockquote>
+{
+  "company": {
+    "name": "Microsoft",
+    "product": "Windows10",
+    "logo": {
+      "main_color": "blue",
+      "Logo_shape": "window"
+    },
+    "industry": "Software",
+    "usage": "Cloud",
+    "additional_features": []
+  }
+}
+</blockquote>
