@@ -24,5 +24,17 @@ Use company logos api to be able to display the logo in ForPassJS
 """
 
 #* START OF THE CLI CODE:
+def main():
+    #start puting in here the CLI stuff
+    # TODO CLI
+
+
+
+
+
+if __name__ == "__main__":
+    main()
+
+
 
 
