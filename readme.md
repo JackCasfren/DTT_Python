@@ -23,7 +23,7 @@ Make a piece of Software that does the following:
 - later on it will integrate with for pass js. a JavaScript API from the client side will call python to get the values and make reports. (but not edit)
 
 
-## story
+## Context
 i found this service called pantry json api and i wanted to try it out.
 its 100MB free to CRUD a json file.
 Wanted to test it out but i don't konw how much time i have ill ask tomorow.
