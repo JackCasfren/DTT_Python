@@ -2,10 +2,8 @@
   "company": {
     "name": "Microsoft",
     "product": "Windows10",
-    "logo": {
-      "main_color": "blue",
-      "Logo_shape": "window"
-    },
+    "main_color": "blue",
+    "Logo_shape": "window",
     "industry": "Software",
     "usage": "Cloud",
     "additional_features": []

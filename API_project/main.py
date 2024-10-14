@@ -18,8 +18,8 @@ def main():
     [1] get_pantry_data
     [2] update_pantry_account
     Basket Interactions:
-    [3] 
-    [4] 
+    [3] get_pantry_data
+    [4] make_pantry_insert
     [5] 
     [6] 
     [7]
@@ -47,11 +47,18 @@ def main():
                 description = input("Description: ")
                 # todo format the json it appears with tabs and not a straight line
                 print(full_pantry.update_pantry_account(name,description ))
-            # the basket interactions:
+            
+            #* the basket interactions:
+
+
             case "3":
-                print("basket 3")
+                # todo add list of all of the baskets
+                print("What is the name of the basket you read?")
+                name = input("Name: ").lower()
+                print(full_basket.get_basket_data(name))
             case "4":
                 print("basket 4")
+
             case "5":
                 print("basket 5")
             case "6":

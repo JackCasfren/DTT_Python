@@ -5,20 +5,21 @@ api_key = creds.api_key
 
 
 
-#!
-def get_pantry_data(payload):
+
+def get_basket_data(basket_name):
     conn = http.client.HTTPSConnection("getpantry.cloud")
-    payload = payload #todo fix this mess
+    payload = "" 
     headers = {
         'Content-Type': 'application/json'
     }
-    conn.request("GET", f"/apiv1/pantry/{api_key}/basket/pantry1", payload, headers)
+    conn.request("GET", f"/apiv1/pantry/{api_key}/basket/{basket_name}", payload, headers)
     res = conn.getresponse()
     data = res.read()
+    #print(data.decode("utf-8"))
     return data.decode("utf-8")
     
 # To use the function:
-# result = get_pantry_data()
+# result = get_basket_data()
 # print(result)
 
 
@@ -27,7 +28,8 @@ def get_pantry_data(payload):
 def make_pantry_insert(new_data):
     conn = http.client.HTTPSConnection("getpantry.cloud")
     payload = json.dumps(new_data)
-    """ # it was originaly like this, i think its going to give some errors, so just in case im storing it.
+    # it was originaly like this, i think its going to give some errors, so just in case im storing it.
+    """ 
     payload = json.dumps({
         "derp": "flerp123",
         "testPayload": True,
