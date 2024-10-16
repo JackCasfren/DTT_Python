@@ -57,8 +57,6 @@ def main():
                 full_pantry.list_all_baskets()
                 
                 print("What is the name of the basket you read?")
-                
-                
                 name = input("Name: ").lower()
                 print(full_basket.get_basket_data(name))
             case "4":
