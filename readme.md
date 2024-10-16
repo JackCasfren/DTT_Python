@@ -32,3 +32,4 @@ Then thinking about what i should do with this API what i would say is a good id
 complement the ForPass.js project with a API that gets the values for you.
 this is the repository for the other project: https://github.com/JackCasfren/ForPassJS
 
+# This project got me far and I appreciate what it has done for me :) just got the opportunity to have a meeting on the subject.
