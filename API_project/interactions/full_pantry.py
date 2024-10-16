@@ -51,4 +51,9 @@ def update_pantry_account( name, description):
 # print(result)
 
 
-
+def list_all_baskets():
+    print("The baskets are:")
+    data = json.loads(get_pantry_data())
+    baskets = data['baskets']
+    for basket in baskets:
+                    print(basket)
