@@ -55,21 +55,7 @@ def main():
                 # todo add list of all of the baskets
                 #! working on it!
                 full_pantry.list_all_baskets()
-                '''
-                print("The baskets are:")
-                full_pantry.get_pantry_data()
-                #? maybe it requires json.loads? json.loads(___)
-                data = json.loads(full_pantry.get_pantry_data())
-                #data = full_pantry.get_pantry_data()
                 
-                # Extract the baskets array
-                baskets = data['baskets']
-                # this is what the baskets arrays looks like:
-                # [{'name': 'testBasket', 'ttl': 2460701}, {'name': 'microsoft.com', 'ttl': 2590823}, {'name': 'pantry1', 'ttl': 2500932}]
-               
-                for basket in baskets:
-                    print(basket)
-                '''
                 print("What is the name of the basket you read?")
                 
                 
