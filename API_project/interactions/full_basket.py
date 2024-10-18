@@ -25,7 +25,7 @@ def get_basket_data(basket_name):
 
 
 #insert data in to basket
-def make_pantry_insert(sel_pantry, new_data):
+def insert_basket(sel_pantry, new_data):
     conn = http.client.HTTPSConnection("getpantry.cloud")
     payload = json.dumps(new_data)
     # it was originaly like this, i think its going to give some errors, so just in case im storing it.

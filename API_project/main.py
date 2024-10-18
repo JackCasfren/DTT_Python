@@ -62,6 +62,7 @@ def main():
                 print("What is the name of the basket you read?")
                 sel_pantry = input("Name: ").lower()
                 print(full_basket.get_basket_data(sel_pantry))
+
             case "4":
                 # todo UX to allow user to insert data
                 # could be allowing the user to make their won json structure
@@ -72,30 +73,7 @@ def main():
                 full_pantry.list_all_baskets()
                 # todo proper function to make new baskets
                 sel_pantry = input("Name: ").lower()
-                '''print(insert the following data: )
-                input(name: )
-                input(product )
-                input(main_color )
-                input(Logo_shape )
-                input(industry )
-                input(usage )
-                input(additional_features )
-                '''
-                
-                '''
-                {
-                    "company": {
-                        "name": "Microsoft",
-                        "product": "Windows10",
-                        "main_color": "blue",
-                        "Logo_shape": "window",
-                        "industry": "Software",
-                        "usage": "Cloud",
-                        "additional_features": []
-                    }
-                }
 
-                '''
                 # Collect input from the user
                 company_name = input("Insert the company name: ")
                 product = input("Insert the product: ")
@@ -106,7 +84,7 @@ def main():
                 additional_features = input("Insert additional features (separated by commas): ").split(',')
 
                 # Create the JSON structure
-                data = {
+                new_data = {
                     "company": {
                         "name": company_name,
                         "product": product,
@@ -119,10 +97,10 @@ def main():
                 }
 
                 # Convert the dictionary to JSON and print it
-                json_data = json.dumps(data, indent=4)
+                json_data = json.dumps(new_data, indent=4)
                 print(json_data)
-
-                full_basket.make_pantry_insert(sel_pantry, new_data )
+                print(sel_pantry, new_data)
+                full_basket.insert_basket(sel_pantry, new_data )
 
 
             case "5":
