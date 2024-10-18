@@ -25,7 +25,7 @@ def get_basket_data(basket_name):
 
 
 #insert data in to basket
-def make_pantry_insert(new_data):
+def make_pantry_insert(sel_pantry, new_data):
     conn = http.client.HTTPSConnection("getpantry.cloud")
     payload = json.dumps(new_data)
     # it was originaly like this, i think its going to give some errors, so just in case im storing it.
@@ -39,7 +39,7 @@ def make_pantry_insert(new_data):
     headers = {
         'Content-Type': 'application/json'
     }
-    conn.request("POST", f"/apiv1/pantry/{api_key}/basket/pantry1", payload, headers)
+    conn.request("POST", f"/apiv1/pantry/{api_key}/basket/{sel_pantry}", payload, headers)
     res = conn.getresponse()
     data = res.read()
     print(data.decode("utf-8"))
