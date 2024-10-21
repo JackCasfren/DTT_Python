@@ -5,6 +5,12 @@ Here you will be able to find the asked for excersises.
 ![image](https://github.com/user-attachments/assets/7f67add9-9ada-4cd5-b1b3-8c06ea764298)
 
 
+# How to setup project:
+first step is aquiring a pantry api key. It's easy, from there create a file in the base directory called creds.py in it insert your apy key under a variable called "api_key".
+
+I use IDX, if you just import the repo it should do everything automatically.
+Otherwise some dependencies will have to be installed manually.
+
 
 
 # Pantry Company Values API
@@ -32,4 +38,4 @@ Then thinking about what i should do with this API what i would say is a good id
 complement the ForPass.js project with a API that gets the values for you.
 this is the repository for the other project: https://github.com/JackCasfren/ForPassJS
 
-# This project got me far and I appreciate what it has done for me :) just got the opportunity to have a meeting on the subject.
+This project got me far and I appreciate what it has done for me :) just got the opportunity to have a meeting on the subject.
