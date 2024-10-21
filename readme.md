@@ -4,17 +4,14 @@ Here you will be able to find the asked for excersises.
 # the project.
 ![image](https://github.com/user-attachments/assets/7f67add9-9ada-4cd5-b1b3-8c06ea764298)
 
+# Name of the project:
+CIFAPI.py -> Company Identifiers for Forpass API.
 
 # How to setup project:
 first step is aquiring a pantry api key. It's easy, from there create a file in the base directory called creds.py in it insert your apy key under a variable called "api_key".
 
 I use IDX, if you just import the repo it should do everything automatically.
 Otherwise some dependencies will have to be installed manually.
-
-
-
-# Pantry Company Values API
-PCVAPI (name is not definitive)
 
 # Main Objectives
 Make a piece of Software that does the following:
