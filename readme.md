@@ -9,7 +9,7 @@ CIFAPI.py -> Company Identifiers for Forpass API.
 
 # How to setup project:
 first step is aquiring a pantry api key. It's easy, from there create a file in the base directory called creds.py in it insert your apy key under a variable called "api_key".
-
+The api key can be made here: https://getpantry.cloud/#
 I use IDX, if you just import the repo it should do everything automatically.
 Otherwise some dependencies will have to be installed manually.
 
