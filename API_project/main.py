@@ -63,11 +63,8 @@ def main():
                 sel_pantry = input("Name: ").lower()
                 print(full_basket.get_basket_data(sel_pantry))
 
-            case "4":
-                # todo UX to allow user to insert data
-                # could be allowing the user to make their won json structure
-                # or it could be just adding values inside a json structure 
-                # for now im going to go for the second option.
+            case "4" | "insert_basket": #! this works :D
+                # todo UX to allow user to insert data. could be allowing the user to make their won json structure. or it could be just adding values inside a json structure. for now im going to go for the second option.
                 print("Insert values into a basket selected.")
                 print("Into what basket do you want to insert?")
                 full_pantry.list_all_baskets()
@@ -83,6 +80,7 @@ def main():
                 usage = input("Insert the usage: ")
                 additional_features = input("Insert additional features (separated by commas): ").split(',')
 
+                # todo When the api is made, one should check the format of the inserted query.
                 # Create the JSON structure
                 new_data = {
                     "company": {
@@ -95,6 +93,7 @@ def main():
                         "additional_features": [feature.strip() for feature in additional_features if feature.strip()]
                     }
                 }
+                
 
                 # Convert the dictionary to JSON and print it
                 json_data = json.dumps(new_data, indent=4)
