@@ -39,3 +39,14 @@ complement the ForPass.js project with a API that gets the values for you.
 this is the repository for the other project: https://github.com/JackCasfren/ForPassJS
 
 This project got me far and I appreciate what it has done for me :) just got the opportunity to have a meeting on the subject.
+
+# Second section:
+
+read only API. For-pass user will ask for a domain, and from there give the result.
+that uses the pythoneverywhere.com domain.
+if people want more requests, they can pay.
+
+From there integrate it into Forpass.JS
+
+
+
